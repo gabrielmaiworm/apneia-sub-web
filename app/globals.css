@@ -26,6 +26,10 @@ html[data-theme='deck'] {
   box-sizing: border-box;
 }
 
+html[data-landing='true'] {
+  background: #010810;
+}
+
 html {
   min-height: 100%;
   background:
