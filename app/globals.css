@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --bg: #07111d;
+  --bg-muted: rgba(255, 255, 255, 0.05);
+  --text: #effbff;
+  --text-soft: rgba(239, 251, 255, 0.72);
+  --accent: #67e8f9;
+  --line: rgba(255, 255, 255, 0.1);
+}
+
+html[data-theme='deck'] {
+  color-scheme: light;
+  --bg: #eef7fb;
+  --bg-muted: rgba(5, 20, 34, 0.06);
+  --text: #08121f;
+  --text-soft: rgba(8, 18, 31, 0.72);
+  --accent: #0e7490;
+  --line: rgba(8, 18, 31, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background:
+    radial-gradient(circle at top left, rgba(56, 189, 248, 0.18), transparent 35%),
+    radial-gradient(circle at top right, rgba(249, 115, 22, 0.18), transparent 30%),
+    linear-gradient(180deg, rgba(7, 17, 29, 1) 0%, rgba(5, 12, 20, 1) 100%);
+}
+
+html[data-theme='deck'] {
+  background:
+    radial-gradient(circle at top left, rgba(14, 116, 144, 0.12), transparent 35%),
+    radial-gradient(circle at top right, rgba(249, 115, 22, 0.12), transparent 30%),
+    linear-gradient(180deg, #f7fbfd 0%, #edf5f8 100%);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--text);
+  font-family: 'Avenir Next', 'Segoe UI', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.shell {
+  position: relative;
+}
+
+.shell::before,
+.shell::after {
+  content: '';
+  position: fixed;
+  z-index: -1;
+  border-radius: 999px;
+  filter: blur(60px);
+  opacity: 0.65;
+}
+
+.shell::before {
+  top: 8rem;
+  left: -6rem;
+  width: 14rem;
+  height: 14rem;
+  background: rgba(56, 189, 248, 0.24);
+}
+
+.shell::after {
+  top: 16rem;
+  right: -4rem;
+  width: 16rem;
+  height: 16rem;
+  background: rgba(249, 115, 22, 0.18);
+}
