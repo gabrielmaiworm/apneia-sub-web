@@ -161,8 +161,8 @@ export function ApneiaLanding() {
       <li><a href="#pwa" onClick={closeNav}>Tecnologia</a></li>
     </ul>
     <div className="nav-cta">
-      <Link className="btn-sm" href="/feed" onClick={closeNav}>Entrar</Link>
-      <Link className="btn-sm solid" href="/feed" onClick={closeNav}>Criar Conta</Link>
+      <Link className="btn-sm" href="/login" onClick={closeNav}>Entrar</Link>
+      <Link className="btn-sm solid" href="/cadastro" onClick={closeNav}>Criar Conta</Link>
     </div>
   </nav>
 
@@ -198,7 +198,7 @@ export function ApneiaLanding() {
   <div className="modules-intro" id="modulos">
     <div className="rv">
       <div className="section-eyebrow">O App</div>
-      <h2 className="section-h2">PLATAFORMA<br />COMPLETA<br />DO CAÇADOR</h2>
+      <h2 className="section-h2">PLATAFORMA <br />COMPLETA <br />DO CAÇADOR</h2>
       <p className="section-desc">Do Dive Log social ao mapa de spots secretos, do inventário de equipamentos ao leaderboard de profundidade — tudo pensado para quem vive no mar.</p>
     </div>
     <div className="module-visual rv">
@@ -224,7 +224,7 @@ export function ApneiaLanding() {
           </div>
           <div className="pui-divelog">
             <div className="pui-dive-row">
-              <span className="pui-dive-user">MARCOS_SUB</span>
+              <span className="pui-dive-user">GABRIEL_SUB</span>
               <span className="pui-dive-time">14:23</span>
             </div>
             <div className="pui-dive-data">
@@ -341,7 +341,7 @@ export function ApneiaLanding() {
   
   <div className="divelog-showcase rv" id="divelog">
     <div className="section-eyebrow">Módulo 02</div>
-    <h2 className="section-h2">O FEED<br />QUE RESPIRA</h2>
+    <h2 className="section-h2">O FEED <br />QUE RESPIRA</h2>
     <p className="section-desc">Cada mergulho vira uma história técnica e visual. Curta, comente, compartilhe — a comunidade se forma em torno da profundidade.</p>
     <div className="dl-feed">
       <div className="dl-card rv d1">
@@ -436,7 +436,7 @@ export function ApneiaLanding() {
   <div className="geo-section rv" id="geo">
     <div>
       <div className="section-eyebrow">Módulo 03</div>
-      <h2 className="section-h2">MAPA<br />DE SPOTS</h2>
+      <h2 className="section-h2">MAPA <br />DE SPOTS</h2>
       <p className="section-desc" style={{
     'marginBottom': '2rem'
   }}>Inteligência geográfica para o caçador. Descubra, marque e proteja seus pontos favoritos.</p>
@@ -460,11 +460,6 @@ export function ApneiaLanding() {
       </div>
     </div>
     <div className="map-mockup rv">
-      <div className="map-grid-lines"></div>
-      <div className="map-coast mc1"></div>
-      <div className="map-coast mc2"></div>
-      <div className="map-coast mc3"></div>
-      
       <div className="map-spot" style={{
     'top': '35%',
     'left': '30%'
@@ -564,7 +559,7 @@ export function ApneiaLanding() {
   
   <div className="gamif-section rv" id="gamif">
     <div className="section-eyebrow">Módulo 06</div>
-    <h2 className="section-h2">CONQUISTAS<br />& RANKING</h2>
+    <h2 className="section-h2">CONQUISTAS <br />& RANKING</h2>
     <p className="section-desc">Cada mergulho registrado é XP. Cada espécie nova é um badge. A profundidade te posiciona no ranking global.</p>
 
     <div className="badges-row">
@@ -665,7 +660,7 @@ export function ApneiaLanding() {
   <div className="pwa-section rv" id="pwa">
     <div>
       <div className="section-eyebrow">Tecnologia</div>
-      <h2 className="section-h2">OFFLINE<br />FIRST.<br />SEMPRE.</h2>
+      <h2 className="section-h2">OFFLINE <br />FIRST. <br />SEMPRE.</h2>
       <p className="section-desc">Projetado para funcionar onde não tem sinal — no barco, na praia remota, 30 metros abaixo da superfície.</p>
       <div className="pwa-features">
         <div className="pwa-feat rv d1">
@@ -698,45 +693,7 @@ export function ApneiaLanding() {
         </div>
       </div>
     </div>
-    <div>
-      <div className="section-eyebrow">Stack Técnico</div>
-      <h2 className="section-h2" style={{
-    'fontSize': '2.5rem',
-    'marginBottom': '2rem'
-  }}>ARQUITETURA<br />DO APP</h2>
-      <div className="tech-stack">
-        <div className="tech-item rv d1">
-          <span className="tech-name">Next.js 14</span>
-          <span className="tech-role">Frontend · App Router · PWA</span>
-        </div>
-        <div className="tech-item rv d2">
-          <span className="tech-name">Node.js + Fastify</span>
-          <span className="tech-role">Backend · REST API</span>
-        </div>
-        <div className="tech-item rv d3">
-          <span className="tech-name">PostgreSQL + PostGIS</span>
-          <span className="tech-role">Dados · Geo · Spots</span>
-        </div>
-        <div className="tech-item rv d4">
-          <span className="tech-name">Redis</span>
-          <span className="tech-role">Cache · Feed · Leaderboard</span>
-        </div>
-        <div className="tech-item rv d5">
-          <span className="tech-name">JWT + OAuth2</span>
-          <span className="tech-role">Auth · Segurança</span>
-        </div>
-        <div className="tech-item rv d1">
-          <span className="tech-name">WebSockets</span>
-          <span className="tech-role">Notificações em Tempo Real</span>
-        </div>
-        <div className="tech-item rv d2">
-          <span className="tech-name">S3 / R2</span>
-          <span className="tech-role">Armazenamento de Mídia</span>
-        </div>
-      </div>
     </div>
-  </div>
-
   
   <div className="cta-final rv">
     <h2>MERGULHE<br />NA <em>PLATAFORMA</em></h2>
